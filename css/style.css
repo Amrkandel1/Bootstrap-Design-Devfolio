@@ -1,0 +1,574 @@
+::-webkit-scrollbar {
+    width: 0.9375rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #E8E3E3;
+    border-radius: 1.25rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0078FF;
+    border-radius: 1.25rem;
+}
+/*---------------------------- navbar-css-start --------------------*/
+.navbar-brand{
+    font-size: 1.75rem;
+}
+.nav-item{
+    position: relative;
+}
+.navbar-nav >li >a::before{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 5%;
+    bottom: 5%;
+    left: 8%;
+    transition: all 0.5s;
+    background-color: white;
+}
+.navbar-nav li:hover a::before{
+    width: 50%;
+}
+.dropss{
+    position: relative;    
+}
+.drop{
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    border: none;
+    left: 0.5938rem;
+    top: calc(100% + 1.5625rem);
+    border-radius: 0%;
+    box-shadow: 0rem 0rem 1.875rem rgba(127, 137, 161, 0.25);
+    transition: all 0.5s ;
+}
+.drops:hover .drop{
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.drop li a{
+    transition: all 0.5s;
+}
+.drop li a:hover{
+    color: #0078FF;
+}
+.navbar-nav li a{
+    margin-right: 1.125rem;
+}
+.nav-link1{
+    text-decoration: none;
+    font-size: 0.9375rem;
+    margin-left: 1rem;
+    color: #4e4e4e;
+}
+.dropdown-item1{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+.dropdown1{
+    position: relative;
+}
+.drop1{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    left:70%;
+    top: 30%;
+    border: none;
+    border-radius: 0%;
+    box-shadow: 0rem 0rem 1.875rem rgba(127, 137, 161, 0.25);
+    transition: all 0.5s ;
+}
+.drop1 li a{
+    transition: all 0.5s;
+}
+.drop1 li a:hover{
+    color: #0078FF;
+}
+.dropdown1:hover .drop1{
+    display: inline-block;
+    opacity: 1;
+    left: 95%;
+}
+.navbar-toggler-icon{
+    background-image: none !important;
+}
+/*---------------------------- navbar-css-start --------------------*/
+
+body:not(body:has(:target)) .home-link::before{
+    width: 50%;
+} 
+
+/*------------------------- home-page-css-start --------------------*/
+#home-page:target{
+
+}
+body:has(#home-page:target) .home-link::before{
+    width: 50%;
+} 
+
+#home-page{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed; 
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    font-size: 4.5rem;
+}
+.hero-title p{
+    font-size: 2.5rem;
+}
+.hero-title p::after{
+    content: " |";
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+       
+}
+@keyframes typing {
+    0%{     content:" |"}
+   1.15%{  content:" P|"}
+    2.3%{  content:" Ph|"}
+    3.45%{  content:"Pho|"}
+    4.6%{   content:"Phot|"}
+    5.75%{  content:"Photo|"}
+    6.9%{  content:"Photog|"}
+    8.05%{  content:"Photogr|"}
+    9.2%{  content:"Photogra|"}
+    10.35%{   content:"Photograp|"}
+    11.5%{  content:"Photograph|"}
+    12.65%{ content:"Photographe|"}
+    13.8%{ content:"Photographer|"}
+    14.95%{ content:"Photographer|"}
+    16.1%{  content:"Photographer|"}
+    17.25%{ content:"Photographer|"}
+    18.4%{ content:"Photographe|"}
+    19.55%{ content:"Photograph|"}
+    20.7%{ content:"Photograp|"}
+    21.85%{  content:"Photogra|"}
+    23%{ content:"Photogr|"}
+    24.15%{ content:"Photog|"}
+    25.3%{ content:"Photo|"}
+    26.45%{ content:"Phot|"}
+    27.6%{  content:"Pho|"}
+    28.75%{ content:"Ph|"}
+    29.9%{ content:"P|"}
+    31.05%{ content:"P|"}
+    32.2%{ content:" |"}
+    33.35%{  content:"Fr|"}
+    34.5%{ content:"Fre|"}
+    35.65%{ content:"Free|"}
+    36.8%{ content:"Freel|"}
+    37.95%{ content:"Freela|"}
+    39.1%{  content:"Freelan|"}
+    40.25%{ content:"Freelanc|"}
+    41.4%{ content:"Freelance|"}
+    42.55%{ content:"Freelancer|"}
+    43.7%{ content:"Freelancer|"}
+    44.85%{ content:"Freelancer|"}
+    46%{  content:"Freelancer|"}
+    47.15%{ content:"Freelance|"}
+    48.3%{ content:"Freelanc|"}
+    49.45%{ content:"Freelan|"}
+    50.6%{ content:"Freela|"}
+    51.75%{  content:"Freel|"}
+    52.9%{ content:"Free|"}
+    54.05%{ content:"Fre|"}
+    55.2%{ content:"Fr|"}
+    56.35%{ content:"F|"}
+    57.5%{  content:" |"}
+    58.65%{ content:"D|"}
+    59.8%{ content:"De|"}
+    60.95%{ content:"Des|"}
+    62.1%{ content:"Desi|"}
+    63.25%{  content:"Desig|"}
+    64.4%{ content:"Design|"}
+    65.55%{ content:"Designe|"}
+    66.7%{ content:"Designer|"}
+    67.85%{ content:"Designer|"}
+    69%{  content:"Designer|"}
+    70.15%{ content:"Designer|"}
+    71.3%{ content:"Designe|"}
+    72.45%{ content:"Design|"}
+    73.6%{ content:"Desig|"}
+    74.75%{  content:"Desi|"}
+    75.9%{ content:"Des|"}
+    77.05%{ content:"De|"}
+    78.2%{ content:"Dev|"}
+    79.35%{ content:"Deve|"}
+   80.5%{  content:"Devel|"}
+    81.65%{ content:"Develo|"}
+    82.8%{ content:"Develop|"}
+    83.95%{ content:"Develope|"}
+    85.1%{ content:"Developer|"}
+    86.25%{  content:"Developer|"}
+    87.4%{ content:"Developer|"}
+    88.55%{ content:"Developer|"}
+    89.7%{ content:"Develope|"}
+    90.85%{ content:"Develop|"}
+    92%{  content:"Develo|"}
+    93.15%{ content:"Devel|"}
+    94.3%{ content:"Deve|"}
+    95.45%{ content:"Dev|"}
+    96.6%{ content:"De|"}
+    97.75%{    content:"D|"}
+    100%{ content:" |"}  
+}
+/*------------------------- home-page-css-end --------------------*/
+
+/*------------------------ about-page-css-start ------------------*/
+#about-page:target{
+
+}
+body:has(#about-page:target) .about-link::before{
+    width: 50%;
+}
+.progress{
+    height:  0.7rem;
+}
+.about-info h5{
+    position: relative;
+}
+.about-info h5::before{
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 4%;
+    left: 0;
+    bottom: 5%;
+    background-color: #0078FF;
+}
+.about-info p{
+    line-height: 1.875rem;
+}
+/*------------------------ about-page-css-end --------------------*/
+
+/*---------------------- services-page-css-start -----------------*/
+#services-page:target{
+
+}
+body:has(#services-page:target) .services-link::before{
+    width: 50%;
+}
+.services-page-title{
+    position: relative;
+}
+.services-page-title p::before{
+     content: " ";
+     position: absolute;
+     width: 5%;
+     height: 5%;
+     left: 48.5%;
+     bottom: 5%;
+     background-color: #0078FF;
+}
+.inner1:hover .card1{
+    background-color: #0078FF;
+    border: 0.4375rem solid #CDE1F8;
+}
+.inner1:hover i{
+    color: #ffff;
+}
+.card1{
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 0.625rem solid #0078FF;
+    transition: all 0.5s;
+}
+.card1 i{
+    transition: all 0.5s;
+}
+/*---------------------- services-page-css-end -------------------*/
+
+/*---------------------- icon-page-css-start ---------------------*/
+.icon-page{
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.icon1{
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 0.625rem solid #CDE1F8;
+}
+.layer3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7; 
+    background-color: #0078FF;
+}
+.container{
+    position: relative;   
+}
+/*----------------------- icon-page-css-end ----------------------*/
+
+/*--------------------- portfolio-page-css-start -----------------*/
+#portfolio-page:target{
+
+}
+body:has(#portfolio-page:target) .portfolio-link::before{
+    width: 50%;
+}
+.portfolio-page-title h3{
+    font-size: 3rem;
+}
+.portfolio-page-title{
+    position: relative;
+}
+.portfolio-page-title p::before{
+    content: " ";
+    min-width: 3.4375rem;
+    height: 3%;
+    left: 48.5%;
+    bottom: 35%;
+    position: absolute;
+    background-color: #0078FF;
+}
+.icon2{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.1875rem solid #0078FF;
+}
+.icon2 i{
+    color: #0078FF;
+}
+.span1{
+    font-size: 0.75rem;
+    color: #0078FF;
+}
+.span2{
+    color: #4E4E4E;
+}
+.inner3{
+    overflow: hidden;
+}
+.inner2 img{
+   transition: all 1.1s;
+}
+.inner2:hover img{
+    transform: scale(1.32)
+}
+/*--------------------- portfolio-page-css-end -------------------*/
+
+/*--------------------- slider-page-css-start --------------------*/
+.slider-page{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.layer1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    background-color: #0078FF;
+}
+/*--------------------- slider-page-css-end ----------------------*/
+
+/*--------------------- blog-page-css-start ----------------------*/
+#blog-page:target{
+
+}
+body:has(#blog-page:target) .blog-link::before{
+    width: 50%;
+}
+.blog-page-title h3{
+    font-size: 2.8125rem;
+}
+.blog-page-title{
+    position: relative;
+}
+.blog-page-title p::before{
+    content: " ";
+    position: absolute;
+    left: 48.5%;
+    bottom: 28%;
+    min-width: 3.125rem;
+    height: 3%;
+    background-color: #0078FF;
+}
+.link1{
+    text-decoration: none;
+    color: #1E1E1E; 
+    transition: all 0.5s; 
+}
+.link1:hover{
+    color: #0078FF;
+}
+.card-body{
+    position: relative;
+}
+.badge1{
+    position: absolute;
+    top: -1rem;
+    left: 0.9375rem;
+    right: 0.9375rem;
+}
+.border-top{
+    background-color: #F5F5F5;
+}
+.card-footer1 a{
+    text-decoration: none;
+    color: #1E1E1E;
+    transition: all 0.5s;
+}
+.card-footer1 a:hover{
+    color: #0078FF;
+}
+.img1{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    
+}
+/*--------------------- blog-page-css-end ------------------------*/
+
+/*--------------------- contact-page-css-start -------------------*/
+#contact-page:target{
+
+}
+body:has(#contact-page:target) .contact-link::before{
+    width: 50%;
+}
+#contact-page{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-page1{
+    position: relative;
+}
+.layer4{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078FF;
+    opacity: 0.7;
+    z-index: 22; 
+}
+.contact-page1{
+    position: relative;
+    z-index: 23;
+}
+.contact-page-title h5{
+    position: relative;
+}
+.contact-page-title h5::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 8%;
+    background-color: #0078FF;
+}
+.form1 input{
+    border: 0.0625rem solid #DEE2E6;
+}
+.form1 textarea{
+    min-height: 5rem;
+    border: 1px solid #DEE2E6;
+}
+.botton1{
+    padding: 0.625rem 1.5rem;
+    border: 0;
+    border: 0.25rem solid #ffff;
+    cursor: pointer;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+    background-color: #0078FF;
+    transition: all 0.5s;
+}
+.botton1:hover{
+    border: 0.25rem solid #CDE1F8;
+    background-color: #3393FF;
+}
+.contact-page-title2 h5{
+    position: relative;
+}
+.contact-page-title2 h5::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 8%;
+    background-color: #0078FF;
+}
+.icon-list{
+    list-style: none;
+}
+.icon-list i{
+    color: #0078FF;
+}
+.icon-circle{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    border: 0.25rem solid #0078FF;
+    transition: all 0.5s;
+}
+.icon-circle i{
+    color: #1E1E1E;
+    transition: all 0.5s;
+}
+.icon-circle:hover{
+    border: 0.25rem solid #CDE1F8;
+    background-color: #0078FF;
+}
+.icon-circle:hover i{
+    color: #ffff;
+}
+/*--------------------- contact-page-css-end ---------------------*/
+
+/*--------------------- footer-page-css-start --------------------*/
+.footer-page{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.layer5{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078FF;
+}
+.footer-content{
+    position: relative;
+}
+.footer-ank a{
+   text-decoration: none;
+   color: #ffff;
+}
+/*--------------------- footer-page-css-end ----------------------*/
